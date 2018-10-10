@@ -8,42 +8,42 @@ namespace Assignment5.Models
 {
     public class PersonModel
     {
-        //private int personId;
-        //private string firstName;
-        //private string middleName;
-        //private string lastName;
-        //private DateTime dateOfBirth;
-        //private DateTime addedOn;
-        //private string addedBy;
-        //private string homeAddress;
-        //private string homeCity;
-        //private string faceBookAccountId;
-        //private string llinkedInId;
-        //private string updateOn;
-        //private string imagePath;
-        //private string twitterId;
-        //private string emailId;
+        private int personId;
+        private string firstName;
+        private string middleName;
+        private string lastName;
+        private DateTime dateOfBirth;
+        private DateTime addedOn;
+        private string addedBy;
+        private string homeAddress;
+        private string homeCity;
+        private string faceBookAccountId;
+        private string llinkedInId;
+        private string updateOn;
+        private string imagePath;
+        private string twitterId;
+        private string emailId;
 
-        public int PersonId { get; set; }
-        public string FirstName { get; set; }
-        public string MiddleName { get; set ; }
-        public string LastName { get; set; }
+
+        public string FirstName { get => firstName; set => firstName = value; }
+        public string MiddleName { get => middleName; set => middleName = value; }
+        public string LastName { get => lastName; set => lastName = value; }
         [DataType(DataType.Date)]
         [Display(Name = "Date of Birth")]
-        public DateTime DateOfBirth { get ; set; }
+        public DateTime DateOfBirth { get => dateOfBirth; set => dateOfBirth = value; }
 
-        public string AddedBy { get ; set; }
-        public string HomeAddress { get ; set; }
-        public string HomeCity { get ; set ; }
-        public string FaceBookAccountId { get ; set ; }
-        public string LlinkedInId { get ; set ; }
-        public string UpdateOn { get ; set ; }
-        public string ImagePath { get; set ; }
-        public string TwitterId { get ; set; }
+        public string AddedBy { get => addedBy; set => addedBy = value; }
+        public string HomeAddress { get => homeAddress; set => homeAddress = value; }
+        public string HomeCity { get => homeCity; set => homeCity = value; }
+        public string FaceBookAccountId { get => faceBookAccountId; set => faceBookAccountId = value; }
+        public string LlinkedInId { get => llinkedInId; set => llinkedInId = value; }
+        public string UpdateOn { get => updateOn; set => updateOn = value; }
+        public string ImagePath { get => imagePath; set => imagePath = value; }
+        public string TwitterId { get => twitterId; set => twitterId = value; }
         [EmailAddress]
-        public string EmailId { get; set; }
+        public string EmailId { get => emailId; set => emailId = value; }
         [DataType(DataType.Date)]
-        public DateTime AddedOn { get; set; }
-        
+        public DateTime AddedOn { get => addedOn; set => addedOn = value; }
+        public int PersonId { get => personId; set => personId = value; }
     }
 }
